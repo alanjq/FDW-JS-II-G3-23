@@ -1,3 +1,1 @@
-Javascript II
-
-Grupo 3
+Javascript II - Grupo 3
