@@ -1,4 +1,3 @@
-import icons from "../img/icons.svg"
 import { ingredientList } from "./ingredientList";
 import { recipeDetailsMarkup } from "./recipe";
 import { renderSpinner } from "./spinner";
