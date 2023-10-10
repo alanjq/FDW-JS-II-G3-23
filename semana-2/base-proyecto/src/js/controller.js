@@ -16,8 +16,8 @@ const timeout = function (s) {
 
 ///////////////////////////////////////
 
-async function showRecipe(url) {
-  const response = await fetch(url)
+async function showRecipe(id) {
+  const response = await fetch(`https://forkify-api.herokuapp.com/api/v2/recipes/${id}`)
 
   const { data } = await response.json()
 
@@ -28,14 +28,21 @@ async function showRecipe(url) {
 
 renderSpinner(recipeContainer)
 
-const URL_API = 'https://forkify-api.herokuapp.com/api/v2/recipes/5ed6604591c37cdc054bc886'
-showRecipe(URL_API)
-  .then((recipe) => {
-    // Colocamos el HTML
-    recipeContainer.insertAdjacentHTML('afterbegin', recipeDetailsMarkup(recipe))
-    recipeContainer.insertAdjacentHTML('afterbegin', ingredientList(recipe))
-    console.log(recipe);
-  })
-  .catch((er) => {
-    console.error('URL mal', er)
-  })
+const loadRecipe = () => {
+  const id = location.hash.slice(1);
+  showRecipe(id)
+    .then((recipe) => {
+      // Limpia el contenedor
+      recipeContainer.innerHTML = ''
+      // Colocamos el HTML
+      recipeContainer.insertAdjacentHTML('afterbegin', recipeDetailsMarkup(recipe))
+      recipeContainer.insertAdjacentHTML('afterbegin', ingredientList(recipe))
+    })
+    .catch((er) => {
+      console.error('URL mal', er)
+    })
+}
+
+window.addEventListener('hashchange', loadRecipe)
+
+
