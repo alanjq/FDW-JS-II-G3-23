@@ -1,0 +1,19 @@
+{
+  "name": "tema-7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ejemplo.js",
+  "scripts": {
+    "build": "babel index.js -o compilado/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.2"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.23.2"
+  }
+}

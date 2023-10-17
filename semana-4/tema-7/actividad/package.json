@@ -1,0 +1,19 @@
+{
+  "name": "actividad",
+  "version": "1.0.0",
+  "description": "",
+  "main": "parte2.js",
+  "scripts": {
+    "build": "babel parte2.js -o compilado/parte2.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.2"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.23.2"
+  }
+}

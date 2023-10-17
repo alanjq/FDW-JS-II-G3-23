@@ -1,0 +1,23 @@
+// CSS
+.header {
+    color: red;
+    font-size: 1em;
+}
+.footer {
+    color: red;
+    font-size: 1em;
+}
+
+// SCSS
+$color-fuente: purple;
+$tamano-letra: 1em;
+
+.header {
+    color: $color-fuente;
+    font-size: $tamano-letra;
+}
+
+.footer {
+    color: $color-fuente;
+    font-size: $tamano-letra;
+}

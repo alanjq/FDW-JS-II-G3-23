@@ -1,0 +1,19 @@
+{
+  "name": "actividad",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ejercicio.js",
+  "scripts": {
+    "build": "babel ejercicio.js -o compilado/ejercicio.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.2"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.23.2"
+  }
+}
