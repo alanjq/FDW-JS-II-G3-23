@@ -1,6 +1,6 @@
-import { ingredientList } from "./ingredientList";
-import { recipeDetailsMarkup } from "./recipe";
-import { renderSpinner } from "./spinner";
+import { ingredientList } from "./ingredientList.js";
+import { recipeDetailsMarkup } from "./recipe.js";
+import { renderSpinner } from "./spinner.js";
 
 const recipeContainer = document.querySelector('.recipe');
 
